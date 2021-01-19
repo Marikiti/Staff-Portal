@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">StaffPortal</string>
+    <string name="account">Enter User Pin To Confirm Changes</string>
+    <string name="pin_marikiti">Enter Pin</string>
+    <string name="cancel">Cancel</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="ok">Ok</string>
+    <string-array name="txtGroup">
+        <item>-Select Shop-</item>
+        <item>Fruits Shop</item>
+        <item>Food shop</item>
+        <item>Shoes Shop</item>
+
+    </string-array>
+
+    <string-array name="txtaccount">
+        <item>-SELECT-</item>
+        <item>DEACTIVATE</item>
+        <item>ACTIVATE</item>
+        <item>SUSPEND</item>
+    </string-array>
+
+    <string-array name="txtleleducation">
+        <item>-SELECT EDUCATION LEVEL-</item>
+        <item>UNIVERSITY</item>
+        <item>SECONDARY</item>
+        <item>PRIMARY</item>
+        <item>OTHER</item>
+    </string-array>
+
+    <string-array name="txtnxtstatus">
+        <item>-SELECT STATUS-</item>
+        <item>Wife</item>
+        <item>Child</item>
+        <item>Father</item>
+        <item>Mother</item>
+        <item>Brother</item>
+        <item>Sister</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="txtemploymentstatus">
+        <item>-SELECT STATUS-</item>
+        <item>Employed</item>
+        <item>Self Employed</item>
+        <item>Not Employed</item>
+
+    </string-array>
+    <string-array name="txtstatus">
+        <item>-SELECT STATUS-</item>
+        <item>Single</item>
+        <item>Married</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="county">
+        <item>-SELECT COUNTY-</item>
+        <item>BOMET</item>
+        <item>NAROK</item>
+
+    </string-array>
+
+    <string-array name="constituency">
+        <item>-SELECT CONSTITUENCY-</item>
+        <item>Bomet East</item>
+        <item>Bomet West</item>
+        <item>Chepalungu</item>
+        <item>Sotik</item>
+        <item>Bomet Central</item>
+    </string-array>
+
+    <string-array name="ward">
+        <item>-SELECT WARD-</item>
+        <item>Tenwek</item>
+        <item>Longisa</item>
+    </string-array>
+
+    <string-array name="txtScale">
+        <item>0</item>
+        <item>10</item>
+        <item>9</item>
+        <item>8</item>
+        <item>7</item>
+        <item>6</item>
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+        <item>-2</item>
+        <item>-3</item>
+        <item>-4</item>
+        <item>-5</item>
+        <item>-6</item>
+        <item>-7</item>
+        <item>-8</item>
+        <item>-9</item>
+        <item>-10</item>
+    </string-array>
+
+</resources>

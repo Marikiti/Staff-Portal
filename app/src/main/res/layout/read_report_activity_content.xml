@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="8dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_white"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_profile" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/oxygen_bold"
+                android:hint="koskei"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/shopname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/oxygen_bold"
+                android:hint="Fruits Shop"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tradernumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/oxygen_bold"
+                android:hint="Trader No: MKT123456"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/txtviewdate"
+                android:layout_width="180dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/bg_balance"
+                android:fontFamily="@font/oxygen_bold"
+                android:gravity="center"
+                android:text="JULY 2020"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:paddingLeft="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        tools:ignore="RtlCompat">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/bg_btn_view"
+                            android:orientation="horizontal">
+
+
+                            <EditText
+                                android:id="@+id/etdte"
+                                style="@style/editTextViewAll"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:background="@android:color/transparent"
+                                android:enabled="false"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:paddingTop="10dp"
+                                android:text="ITEM"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        tools:ignore="RtlCompat">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/bg_btn_view"
+                            android:orientation="horizontal">
+
+
+                            <EditText
+                                android:id="@+id/scale"
+                                style="@style/editTextViewAll"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:background="@android:color/transparent"
+                                android:enabled="false"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:paddingTop="10dp"
+                                android:text="SCALE"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        tools:ignore="RtlCompat">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/salestgt"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="8dp"
+                                android:text="Sales Target"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        tools:ignore="RtlCompat">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/ssalestgt"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:entries="@array/txtScale"
+                                android:gravity="center_horizontal"
+                                android:textAlignment="center"
+                                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        tools:ignore="RtlCompat">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtviewstaffsalegrowth"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="8dp"
+                                android:text="Quality of Products or Service"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        tools:ignore="RtlCompat">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/ssqualityofproducts"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:entries="@array/txtScale"
+                                android:gravity="center_horizontal"
+                                android:textAlignment="center"
+                                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        tools:ignore="RtlCompat">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtviewrange"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="8dp"
+                                android:text="Range of Products or Service"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        tools:ignore="RtlCompat">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/ssrange"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:entries="@array/txtScale"
+                                android:gravity="center_horizontal"
+                                android:textAlignment="center"
+                                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        tools:ignore="RtlCompat">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtviewcustomerservice"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="8dp"
+                                android:text="Customer Service"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        tools:ignore="RtlCompat">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/sscustomerservice"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:entries="@array/txtScale"
+                                android:gravity="center_horizontal"
+                                android:textAlignment="center"
+                                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        tools:ignore="RtlCompat">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtviewpersonalhygiene"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="8dp"
+                                android:text="Personal Hygiene"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        tools:ignore="RtlCompat">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/sspersonalhygiene"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:entries="@array/txtScale"
+                                android:gravity="center_horizontal"
+                                android:textAlignment="center"
+                                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        tools:ignore="RtlCompat">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtviewTrainingnneds"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="8dp"
+                                android:text="Training needs"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        tools:ignore="RtlCompat">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_white"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/sstraininngneeds"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:entries="@array/txtScale"
+                                android:gravity="center_horizontal"
+                                android:textAlignment="center"
+                                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        tools:ignore="RtlCompat">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtviewperiodonlocation"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="8dp"
+                                android:text="Period on Location"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        tools:ignore="RtlCompat">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/ssperiodonlocation"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:entries="@array/txtScale"
+                                android:gravity="center_horizontal"
+                                android:textAlignment="center"
+                                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        tools:ignore="RtlCompat">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtviewtcomlpaints"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="8dp"
+                                android:text="Customer complaints"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        tools:ignore="RtlCompat">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/sscomplaints"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:entries="@array/txtScale"
+                                android:gravity="center_horizontal"
+                                android:textAlignment="center"
+                                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        tools:ignore="RtlCompat">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtvielostreturnsgoods"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="8dp"
+                                android:text="Lost or Returned Goods"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        tools:ignore="RtlCompat">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/sslostreturnsgoods"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:entries="@array/txtScale"
+                                android:gravity="center_horizontal"
+                                android:textAlignment="center"
+                                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        tools:ignore="RtlCompat">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtviewreportedfraud"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="8dp"
+                                android:text="Reported Fraud"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        tools:ignore="RtlCompat">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/sstreportedfraud"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:entries="@array/txtScale"
+                                android:gravity="center_horizontal"
+                                android:textAlignment="center"
+                                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/txttotalscore"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/bg_white"
+                    android:gravity="end"
+                    android:paddingTop="16dp"
+                    android:paddingRight="60dp"
+                    android:singleLine="true"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/black" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_edit_text_gray"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/txtnewsalestarget"
+                        style="@style/editTextViewAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_horizontal"
+                        android:hint="Enter New Sales Target"
+                        android:inputType="number"
+                        android:paddingTop="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButtonSubmit"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_design"
+                android:fontFamily="@font/bariol_bold"
+                android:gravity="center"
+                android:text="Submit"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

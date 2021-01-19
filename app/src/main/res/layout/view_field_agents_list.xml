@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/ui_spacing_normal"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="@dimen/ui_spacing_small"
+            android:adjustViewBounds="true"
+            android:background="@drawable/ic_profile"
+            android:baselineAlignBottom="true"
+            android:scaleType="centerCrop" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ui_spacing_small"
+                android:layout_marginTop="1dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tradername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:paddingTop="4dp"
+                    android:scaleType="centerCrop"
+                    android:text="Staff Name:"
+                    android:textColor="@color/DarkGreen"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tradercode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:paddingLeft="@dimen/ui_spacing_small"
+                    android:paddingTop="4dp"
+                    android:scaleType="centerCrop"
+                    android:text="Trader Code:"
+                    android:textColor="@color/DarkGreen"
+                    android:textSize="@dimen/regular_text"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/txtviewstatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:paddingLeft="@dimen/ui_spacing_small"
+                    android:paddingTop="4dp"
+                    android:paddingRight="10dp"
+                    android:scaleType="centerCrop"
+                    android:text="Status:"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/DarkGreen"
+                    android:textSize="@dimen/regular_text"
+                    tools:ignore="RtlCompat" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ui_spacing_small"
+                android:gravity="center_vertical"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/textviewphoneno"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_baseline_phone_24"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/ui_spacing_small"
+                    android:paddingTop="@dimen/ui_spacing_small"
+                    android:paddingBottom="@dimen/ui_spacing_xsmall"
+                    android:text="0729807505"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+
+
+                <TextView
+                    android:id="@+id/textviewcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/ui_spacing_small"
+                    android:paddingTop="@dimen/ui_spacing_small"
+                    android:paddingBottom="@dimen/ui_spacing_xsmall"
+                    android:text="001"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/textviewstatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/ui_spacing_small"
+                    android:paddingTop="@dimen/ui_spacing_small"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="@dimen/ui_spacing_xsmall"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#E12929"
+                    android:textSize="10sp"
+                    tools:ignore="RtlCompat" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        style="?android:attr/ratingBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="2dp"
+        android:isIndicator="true"
+        android:max="5"
+        android:scaleX=".5"
+        android:scaleY=".5"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp" />
+
+    <View style="@style/Divider" />
+</LinearLayout>
